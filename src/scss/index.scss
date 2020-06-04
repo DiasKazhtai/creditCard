@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1400px;
+    width: 1400px;
+    height: 800px;
+    max-height: 100%;
+    margin: 0 auto;
+    background-color: #ddeefc;
+    .card-wrapper {
+        width:573px;
+        background-color: white;
+        height: 550px;
+        margin: 0 auto;
+        transform: translateY(200px);  
+        position: relative;      
+        border-radius: 6px;
+        .card-form {
+            position: relative;
+            height: 272px;
+            width: 432px;
+            background-color: #056381;
+            margin: 0 auto;
+            transform: translateY(-130px);
+            border-radius: 6px;
+        }
+    }
+}
