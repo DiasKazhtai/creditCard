@@ -39,17 +39,17 @@ module.exports = {
             test: /\.css$/i,
             use: [MiniCssExtractPlugin.loader, 'css-loader'],
           },
-          {
-            test: /\.js$/,
-            exclude: /(node_modules|bower_components)/,
-            use: {
-                loader: 'babel-loader',
-                options: {
-                    presets: ["@babel/preset-env"],
-                    plugins: ["@babel/plugin-proposal-class-properties"]
-                }
-            }
-        },
+        //   {
+        //     test: /\.js$/,
+        //     exclude: /(node_modules|bower_components)/,
+        //     use: {
+        //         loader: 'babel-loader',
+        //         options: {
+        //             presets: ["@babel/preset-env"],
+        //             plugins: ["@babel/plugin-proposal-class-properties"]
+        //         }
+        //     }
+        // },
           {
             test: /\.s[ac]ss$/i,
             use: [
@@ -58,16 +58,16 @@ module.exports = {
               'sass-loader',
             ],
           },
-          {
-            test: /\.m?js$/,
-            exclude: /(node_modules|bower_components)/,
-            use: {
-              loader: 'babel-loader',
-              options: {
-                presets: ['@babel/preset-env']
-              }
-            }
-          }
+        //   {
+        //     test: /\.m?js$/,
+        //     exclude: /(node_modules|bower_components)/,
+        //     use: {
+        //       loader: 'babel-loader',
+        //       options: {
+        //         presets: ['@babel/preset-env']
+        //       }
+        //     }
+        //   }
         ],
       },
 }

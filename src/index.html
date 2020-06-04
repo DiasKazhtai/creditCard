@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Credite card form</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="card-form">
+                <div class="card-form__header">
+                    <div class="square"></div>
+                    <div class="visa">Visa</div>
+                    <input type="text" class="input">
+                    <div class="footer-wrapper">
+                        <div class="user-wrapper-info">
+                            <div class="about-card">
+                                Card holder
+                            </div>
+                            <div class="about-user">
+                                DIAS KAZHTAI
+                            </div>
+                        </div>
+                        <div class="user-wrapper-info">
+                            <div class="about-card">
+                                Express
+                            </div>
+                            <div class="about-user">
+                                MM/YY
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input-info">Card number</div>
+            <div class="card-wrapper-form" contenteditable="true"></div>
+            <div class="input-info">Card holders</div>
+            <div class="card-wrapper-form" contenteditable="true"></div>
+            <div class="card-wrapper-passwords">
+                <div class="month form">Month</div>
+                <div class="year form">Year</div>
+                    <div class="cvv form" contenteditable="true"></div>
+            </div>
+            <button class="button">Submit</button>
+        </div>
+    </div>
 </body>
 </html>
