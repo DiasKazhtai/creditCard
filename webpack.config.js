@@ -21,14 +21,14 @@ module.exports = {
             template: 'index.html'
         }),
         new CleanWebpackPlugin(),   
-        new CopyPlugin({
-            patterns: [
-              { 
-                  from: path.resolve(__dirname, 'src', 'favicon.ico'),
-                   to: path.resolve(__dirname, 'dist')
-                 },
-            ],
-          }),
+        // new CopyPlugin({
+        //     patterns: [
+        //       { 
+        //           from: path.resolve(__dirname, 'src', 'favicon.ico'),
+        //            to: path.resolve(__dirname, 'dist')
+        //          },
+        //     ],
+        //   }),
     ],
     devServer: {
         port: 42000,
